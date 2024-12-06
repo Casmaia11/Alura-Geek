@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge AluraGeek</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>AluraGeek <img src="./img/pixel-art-cloud.gif" alt=""></h1>
+    </header>
+    <main class="conteudo">
+        <section class="parte__esquerda">
+            <div class="titulo__1">
+                <h1 class="titulo_produtos">Meus produtos:</h1>    
+            </div>
+            <div class="produtos__container" >
+                <ul class="lista__produtos" data-produtos> 
+                    <!-- <li class="cartao">
+                       <img src="./caneca-geek-2.webp" alt="">
+                       <div class="cartao__container">
+                               <p>Caneca Mario</p>
+                           <div class="cartao__container__preco">
+                               <p>R$ 20,00</p>
+                                <button class="deletar" data-id="${id}">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                           </div>
+                       </div>
+                   </li> -->
+                   <!--<li class="cartao">
+                       <img src="./spider1.png" alt="">
+                       <div class="cartao__container">
+                               <p>Caneca Spider-Man</p>
+                           <div class="cartao__container__preco">
+                               <p>R$ 20,00</p>
+                           </div>
+                       </div>
+                   </li>
+                   <li class="cartao">
+                       <img src="./miles.png" alt="">
+                       <div class="cartao__container">
+                               <p>Caneca Miles Morales</p>
+                           <div class="cartao__container__preco">
+                               <p>R$ 50,00</p>
+                           </div>
+                       </div>
+                   </li>  -->
+                </ul> 
+            </div>
+        </section>
+        <section class="parte__direita">
+            <div class="parte__formularios">
+                <h1 class="titulo__formularios">Adicionar Produto:</h1>
+            </div>
+            <form class="formularios" data-formulario>
+                <input data-name type="text" name="nome" placeholder="Nome...">
+                <input data-price type="text" placeholder="Valor...">
+                <input data-image type="text" placeholder="Imagem...">
+                <div class="botoes">
+                    <button type="submit" class="botao__enviar">Enviar</button>
+                    <button type="reset" class="botao__apagar">Limpar</button>
+                </div>
+            </form>
+        </section>
+    </main>    
+    <footer>
+        <P><i class="bi bi-c-circle"></i> Desenvolvido por Lucas Maia.<br>2024</br></P>
+    </footer>
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "produtos": [
+    {
+      "name": "Fuko Pop Gerald",
+      "price": "R$ 120",
+      "image": "https://i.ibb.co/mqhNWwT/geraldin.png",
+      "id": 1
+    },
+    {
+      "name": "Fuko Pop Link",
+      "price": "R$ 120",
+      "image": "https://i.ibb.co/TBfBdsf/link.png",
+      "id": 2
+    },
+    {
+      "name": "Quadro Miles Morales",
+      "price": "R$ 50",
+      "image": "https://i.ibb.co/BGrb5S6/miles.png",
+      "id": 3
+    },
+    {
+      "name": "Caneca Spider-Man",
+      "price": "R$ 20",
+      "image": "https://i.ibb.co/QKN2ctW/spider1.png",
+      "id": 4
+    }
+  ]
+}
