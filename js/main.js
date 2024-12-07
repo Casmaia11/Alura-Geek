@@ -1,4 +1,3 @@
-
 import { Conexao } from "./Conexao.js";
 
 const produtos = document.querySelector("[data-produtos]");
@@ -45,9 +44,17 @@ async function enviaForm(event){
     const preco = document.querySelector("[data-price]").value;
     const imagem = document.querySelector("[data-image]").value;
 
-    const novoProduto = await Conexao.post(nome, preco, imagem);
-    produtos.appendChild(criaCard(novoProduto.name, novoProduto.price, novoProduto.image, novoProduto.id));
-    form.reset();
+    if (!nome || !preco || !imagem) {
+        alert("Por favor preencha todos os formulários.")
+        return
+    }
+    try{
+        const novoProduto = await Conexao.post(nome, preco, imagem);
+        produtos.appendChild(criaCard(novoProduto.name, novoProduto.price, novoProduto.image, novoProduto.id));
+        form.reset();
+    } catch (error) {
+        alert("Erro ao enviar o Produto!");
+    }
 }
 
 form.addEventListener("submit", enviaForm);
