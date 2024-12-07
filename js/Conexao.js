@@ -1,13 +1,13 @@
 
 async function listaDeProdutos() {
-  const conectando = await fetch("http://localhost:3000/produtos")
+  const conectando = await fetch("https://67533ebef3754fcea7bb3dea.mockapi.io/Produtos")
   const conectaJson = await conectando.json();
 
   return conectaJson;
 }
 
 async function post(name,price,image) {
-  const enviar = await fetch("http://localhost:3000/produtos",{
+  const enviar = await fetch("https://67533ebef3754fcea7bb3dea.mockapi.io/Produtos",{
     method: "POST",
     headers: {
       "Content-type": "application/json"
@@ -25,7 +25,7 @@ async function post(name,price,image) {
 
 async function deletarProduto(id) {
   try {
-      const response = await fetch(`http://localhost:3000/produtos/${id}`, {
+      const response = await fetch(`https://67533ebef3754fcea7bb3dea.mockapi.io/Produtos/${id}`, {
           method: 'DELETE',
       });
 
